@@ -1,5 +1,4 @@
 namespace GerenciadorTarefas;
-using StatusTarefa;
 
 public class TaskManager
 {

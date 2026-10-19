@@ -1,4 +1,6 @@
 namespace ManagerTests;
+
+using System;
 using Xunit;
 using GerenciadorTarefas;
 
@@ -40,8 +42,8 @@ public class TaskManagerTests
         // Act
         var task = manager.GetById(Guid.NewGuid());
 
-
-        // Assert //Tratado BUG de KeyNotFound, retornando NULL agora.
-        Assert.Throws<KeyNotFoundException>(() => manager.GetById(Guid.NewGuid()));
+        // Assert 
+        // Tratado BUG de KeyNotFound: validando corretamente o retorno NULL
+        Assert.Null(task);
     }
 }

@@ -1,4 +1,5 @@
-namespace StatusTarefa;
+namespace GerenciadorTarefas;
+
 public class TaskItem
 {
     public Guid Id { get; private set; }
@@ -22,6 +23,3 @@ public class TaskItem
         IsCompleted = true;
     }
 }
-
-
-
