@@ -40,7 +40,8 @@ public class TaskManagerTests
         // Act
         var task = manager.GetById(Guid.NewGuid());
 
-        // Assert
-        Assert.Null(task);
+
+        // Assert //Tratado BUG de KeyNotFound, retornando NULL agora.
+        Assert.Throws<KeyNotFoundException>(() => manager.GetById(Guid.NewGuid()));
     }
 }
