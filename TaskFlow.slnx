@@ -1,2 +1,3 @@
 <Solution>
+  <Project Path="TaskFlow.console/TaskFlow.console.csproj" />
 </Solution>
